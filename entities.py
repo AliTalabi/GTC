@@ -2,14 +2,15 @@ from map import *
 from pgzero.actor import Actor
 from game import *
 
+entities_pos_dict = Map().get_entity_start_pos()
+
 class Entity:
 
     def __init__(self, entity_image=None, entity_type=None):
 
         self.entity_image = entity_image
         self.entity = None
-        self.entity_pos = None
-        self.entities_pos_dict = None
+        self.entity_pos = ()
         self.entity_type = entity_type
         self.entity_define_bool = True
         self.entity_arrangement_bool = True
@@ -17,8 +18,8 @@ class Entity:
     def define_actor(self):
 
         if self.entity_define_bool:
-
             self.entity = Actor(self.entity_image)
+            self.arrangement()
             self.entity_define_bool = False
 
         return self.entity
@@ -27,28 +28,28 @@ class Entity:
 
         if self.entity_arrangement_bool:
 
-            self.entities_pos_dict = Map().get_entity_start_pos()
+            for pos in entities_pos_dict:
 
-            for pos in self.entities_pos_dict:
-                if self.entity_pos[pos] == self.entity_type:
-                    for x_y in pos:
-                        self.entity_pos += ((x_y + 1) * 80 + (80 / 2), )
+                if entities_pos_dict[pos][0] == self.entity_type and entities_pos_dict[pos][1]:
+                        for x_y in pos:
+                            self.entity_pos += ((x_y * 80) + (80 / 2), )
 
-                    self.entity_pos = self.entity_pos[::-1]
+                        self.entity_pos = self.entity_pos[::-1]
+                        self.entity.pos = self.entity_pos
 
-                    self.name.pos = self.entity_pos
+                        entities_pos_dict[pos] = (self.entity_type, False)
+
+                        break
 
             self.entity_arrangement_bool = False
-
 
     def draw_entity(self):
         self.entity.draw()
 
     def update_entity(self):
         self.define_actor()
-        self.arrangement()
 
 
 class Block(Entity):
-    def __init__(self, entity_image='block', entity_type='block'):
+    def __init__(self, entity_image='block', entity_type=1):
         super().__init__(entity_image, entity_type)
