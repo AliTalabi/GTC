@@ -7,7 +7,7 @@ class Game:
 
         self.block_list = []
 
-        for i in range(10):
+        for i in range(576):
             self.block = Block()
             self.block_list.append(self.block)
 

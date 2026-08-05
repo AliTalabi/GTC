@@ -18,7 +18,7 @@ class Entity:
     def define_actor(self):
 
         if self.entity_define_bool:
-            self.entity = Actor(self.entity_image)
+            self.entity = Actor(self.entity_image, (10000, 10000))
             self.arrangement()
             self.entity_define_bool = False
 
@@ -32,7 +32,7 @@ class Entity:
 
                 if entities_pos_dict[pos][0] == self.entity_type and entities_pos_dict[pos][1]:
                         for x_y in pos:
-                            self.entity_pos += ((x_y * 80) + (80 / 2), )
+                            self.entity_pos += ((x_y * 40) + (40 / 2), )
 
                         self.entity_pos = self.entity_pos[::-1]
                         self.entity.pos = self.entity_pos
