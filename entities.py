@@ -53,3 +53,7 @@ class Entity:
 class Block(Entity):
     def __init__(self, entity_image='block', entity_type=1):
         super().__init__(entity_image, entity_type)
+
+class Player(Entity):
+    def __init__(self, entity_image='player', entity_type=2):
+        super().__init__(entity_image, entity_type)
