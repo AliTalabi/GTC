@@ -9,11 +9,10 @@ from game import *
 game = Game()
 
 def draw():
-
+    screen.clear()
     game.draw_game()
 
 def update():
-
     game.update_game()
 
 pgzrun.go()

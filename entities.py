@@ -1,3 +1,5 @@
+from pgzero.keyboard import keyboard
+
 from map import *
 from pgzero.actor import Actor
 from game import *
@@ -43,17 +45,31 @@ class Entity:
 
             self.entity_arrangement_bool = False
 
+    def movement(self):
+        pass
+
     def draw_entity(self):
         self.entity.draw()
 
     def update_entity(self):
         self.define_actor()
+        self.movement()
 
 
 class Block(Entity):
     def __init__(self, entity_image='block', entity_type=1):
         super().__init__(entity_image, entity_type)
 
+
 class Player(Entity):
+
     def __init__(self, entity_image='player', entity_type=2):
         super().__init__(entity_image, entity_type)
+
+    def movement(self):
+
+        if keyboard.right and self.entity.x <= 1258:
+            self.entity.x += 2
+
+        if keyboard.left and self.entity.x >= 22:
+            self.entity.x -= 2
