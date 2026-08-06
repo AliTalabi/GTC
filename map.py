@@ -1,6 +1,5 @@
 _ = False
 
-# still editing on branch arrangement
 class Map:
 
     def __init__(self):
