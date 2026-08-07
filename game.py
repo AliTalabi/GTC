@@ -26,7 +26,6 @@ class Game:
             block.update_entity()
 
         self.player.update_entity()
-        print(self.player.entity_blocked_directions)
         self.player.entity_blocked_directions = []
 
         for block in self.block_list:
