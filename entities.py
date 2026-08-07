@@ -2,7 +2,6 @@ from pgzero.keyboard import keyboard
 
 from map import *
 from pgzero.actor import Actor
-from game import *
 
 entities_pos_dict = Map().get_entity_start_pos()
 
@@ -65,11 +64,18 @@ class Player(Entity):
 
     def __init__(self, entity_image='player', entity_type=2):
         super().__init__(entity_image, entity_type)
+        self.entity_blocked_directions = []
 
     def movement(self):
 
-        if keyboard.right and self.entity.x <= 1258:
-            self.entity.x += 2
+        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
+            self.entity.x += 4
 
-        if keyboard.left and self.entity.x >= 22:
-            self.entity.x -= 2
+        if keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
+            self.entity.x -= 4
+
+        if keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+            self.entity.y -= 4
+
+        if keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions:
+            self.entity.y += 4

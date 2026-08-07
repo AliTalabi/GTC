@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7fcd1b4-7d19-4787-b1df-ab9e0d8ef5fb" name="Changes" comment="branch arrangement merged">
+    <list default="true" id="d7fcd1b4-7d19-4787-b1df-ab9e0d8ef5fb" name="Changes" comment="feat: add basic player movement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/map.py" afterDir="false" />
@@ -30,12 +31,12 @@
     &quot;assignee&quot;: &quot;AliTalabi1389&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AliTalabi1389/GTC.git&quot;,
-    &quot;accountId&quot;: &quot;44975ba2-0b4f-438e-a92f-08bf709f2909&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:AliTalabi/GTC.git",
+    "accountId": "44975ba2-0b4f-438e-a92f-08bf709f2909"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -141,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786020131504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: implement initial player">
+      <option name="closed" value="true" />
+      <created>1786020686048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786020686048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add basic player movement">
+      <option name="closed" value="true" />
+      <created>1786055617895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786055617895</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +167,8 @@
     <MESSAGE value="Remove test file" />
     <MESSAGE value="added game images" />
     <MESSAGE value="branch arrangement merged" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch arrangement merged" />
+    <MESSAGE value="feat: implement initial player" />
+    <MESSAGE value="feat: add basic player movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add basic player movement" />
   </component>
 </project>

@@ -26,3 +26,31 @@ class Game:
             block.update_entity()
 
         self.player.update_entity()
+        print(self.player.entity_blocked_directions)
+        self.player.entity_blocked_directions = []
+
+        for block in self.block_list:
+
+            if self.player.entity.right == block.entity.left and (
+                    (block.entity.bottom >= self.player.entity.top >= block.entity.top) or
+                    (block.entity.bottom >= self.player.entity.bottom >= block.entity.top)
+            ):
+                self.player.entity_blocked_directions.append('right')
+
+            if self.player.entity.left == block.entity.right and (
+                    (block.entity.bottom >= self.player.entity.top >= block.entity.top) or
+                    (block.entity.bottom >= self.player.entity.bottom >= block.entity.top)
+            ):
+                self.player.entity_blocked_directions.append('left')
+
+            if self.player.entity.top == block.entity.bottom and (
+                    (block.entity.right >= self.player.entity.left >= block.entity.left) or
+                    (block.entity.right >= self.player.entity.right >= block.entity.left)
+            ):
+                self.player.entity_blocked_directions.append('up')
+
+            if self.player.entity.bottom == block.entity.top and (
+                    (block.entity.right >= self.player.entity.left >= block.entity.left) or
+                    (block.entity.right >= self.player.entity.right >= block.entity.left)
+            ):
+                self.player.entity_blocked_directions.append('down')
