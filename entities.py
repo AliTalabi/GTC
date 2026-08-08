@@ -82,16 +82,13 @@ class Player(Entity):
         if keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
             self.entity.x -= 4
 
-        if keyboard.space and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+        if (keyboard.space and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and
+                'down' in self.entity_blocked_directions):
+
             self.y_speed = self.jump_power
+            self.entity_blocked_directions.remove('down')
 
-            try:
-                self.entity_blocked_directions.remove('down')
-
-            except ValueError:
-                pass
-
-        if 'down' not in self.entity_blocked_directions:
+        if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions:
             self.entity.y += self.y_speed
 
         print(self.entity_blocked_directions)

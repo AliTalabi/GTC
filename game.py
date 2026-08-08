@@ -34,6 +34,7 @@ class Game:
                     self.player.entity.right == block.entity.left
                     and self.player.entity.top < block.entity.bottom
                     and self.player.entity.bottom > block.entity.top
+                    and self.player.entity.colliderect(block.entity)
             ):
                 self.player.entity_blocked_directions.append('right')
 
@@ -41,19 +42,23 @@ class Game:
                     self.player.entity.left == block.entity.right
                     and self.player.entity.top < block.entity.bottom
                     and self.player.entity.bottom > block.entity.top
+                    and self.player.entity.colliderect(block.entity)
             ):
                 self.player.entity_blocked_directions.append('left')
 
             if (
-                    self.player.entity.top == block.entity.bottom
+                    self.player.entity.top >= block.entity.bottom
                     and self.player.entity.left < block.entity.right
                     and self.player.entity.right > block.entity.left
+                    and self.player.entity.colliderect(block.entity)
             ):
                 self.player.entity_blocked_directions.append('up')
 
             if (
-                    self.player.entity.bottom == block.entity.top
+                    self.player.entity.bottom >= block.entity.top
                     and self.player.entity.left < block.entity.right
                     and self.player.entity.right > block.entity.left
+                    and self.player.entity.colliderect(block.entity)
             ):
                 self.player.entity_blocked_directions.append('down')
+                self.player.entity.bottom = block.entity.top + 0.0001
