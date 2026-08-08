@@ -3,6 +3,8 @@ from pgzero.keyboard import keyboard
 from map import *
 from pgzero.actor import Actor
 
+from settings import GRAVITY
+
 entities_pos_dict = Map().get_entity_start_pos()
 
 class Entity:
@@ -15,6 +17,7 @@ class Entity:
         self.entity_type = entity_type
         self.entity_define_bool = True
         self.entity_arrangement_bool = True
+        self.gravity = GRAVITY
 
     def define_actor(self):
 
@@ -64,9 +67,14 @@ class Player(Entity):
 
     def __init__(self, entity_image='player', entity_type=2):
         super().__init__(entity_image, entity_type)
-        self.entity_blocked_directions = []
+        self.entity_blocked_directions = ['down']
+        self.jump_power = -10
+        self.gravity = GRAVITY
+        self.y_speed = 0
 
     def movement(self):
+
+        self.y_speed += self.gravity
 
         if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
             self.entity.x += 4
@@ -74,8 +82,16 @@ class Player(Entity):
         if keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
             self.entity.x -= 4
 
-        if keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
-            self.entity.y -= 4
+        if keyboard.space and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+            self.y_speed = self.jump_power
 
-        if keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions:
-            self.entity.y += 4
+            try:
+                self.entity_blocked_directions.remove('down')
+
+            except ValueError:
+                pass
+
+        if 'down' not in self.entity_blocked_directions:
+            self.entity.y += self.y_speed
+
+        print(self.entity_blocked_directions)
