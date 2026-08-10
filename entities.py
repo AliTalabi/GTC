@@ -91,4 +91,5 @@ class Player(Entity):
         if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions:
             self.entity.y += self.y_speed
 
-        print(self.entity_blocked_directions)
+        if 'down' in self.entity_blocked_directions:
+            self.y_speed = 5
