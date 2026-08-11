@@ -70,3 +70,8 @@ class Game:
 
                 self.player.entity_blocked_directions.append('down')
                 self.player.entity.bottom = block.entity.top - 0.01
+
+            if (
+                self.player.entity.y > (720 - 35/2)
+            ):
+                self.player.entity_blocked_directions.append('down')
