@@ -88,7 +88,7 @@ class Player(Entity):
             self.y_speed = self.jump_power
             self.entity_blocked_directions.remove('down')
 
-        if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions and self.entity.y < 700:
+        if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions:
             self.entity.y += self.y_speed
 
         if 'down' in self.entity_blocked_directions:
