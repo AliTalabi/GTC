@@ -31,16 +31,16 @@ class Game:
         for block in self.block_list:
 
             if (
-                    2 >= abs((self.player.entity.x + 10) - (block.entity.x - 20))
+                    # self.player.entity.right == block.entity.left
+                    3.5 >= abs((self.player.entity.x + 35/2) - (block.entity.x - 20))
                     and self.player.entity.top < block.entity.bottom
                     and self.player.entity.bottom > block.entity.top
                     and self.player.entity.colliderect(block.entity)
             ):
-                # print('ok')
                 self.player.entity_blocked_directions.append('right')
 
             if (
-                    2 >= abs((self.player.entity.x - 10) - (block.entity.x +    20))
+                    3.5 >= abs((self.player.entity.x - 35/2) - (block.entity.x + 20))
                     and self.player.entity.top < block.entity.bottom
                     and self.player.entity.bottom > block.entity.top
                     and self.player.entity.colliderect(block.entity)
@@ -59,21 +59,14 @@ class Game:
                     self.player.entity.bottom >= block.entity.top
                     and self.player.entity.left < block.entity.right
                     and self.player.entity.right > block.entity.left
-                    and self.player.entity.colliderect(block.entity) and
+                    and self.player.entity.colliderect(block.entity)
+                    and
                     (
-                            ('up' not in self.player.entity_blocked_directions
-                            and 'left' not in self.player.entity_blocked_directions
-                            and 'right' not in self.player.entity_blocked_directions)
-                            # (['down', 'right'] not in self.player.entity_blocked_directions)
-                )
-            ):
-                self.player.entity_blocked_directions.append('down')
-                print('ok')
-
-                if (
                         'up' not in self.player.entity_blocked_directions
                         and'left' not in self.player.entity_blocked_directions
                         and 'right' not in self.player.entity_blocked_directions
-                ):
+                )
+            ):
 
-                        self.player.entity.bottom = block.entity.top + 0.0001
+                self.player.entity_blocked_directions.append('down')
+                self.player.entity.bottom = block.entity.top - 0.01

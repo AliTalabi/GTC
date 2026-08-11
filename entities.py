@@ -77,10 +77,10 @@ class Player(Entity):
         self.y_speed += self.gravity
 
         if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
-            self.entity.x += 4
+            self.entity.x += 3.5
 
         if keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
-            self.entity.x -= 4
+            self.entity.x -= 3.5
 
         if (keyboard.space and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and
                 'down' in self.entity_blocked_directions):
@@ -88,7 +88,7 @@ class Player(Entity):
             self.y_speed = self.jump_power
             self.entity_blocked_directions.remove('down')
 
-        if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions:
+        if 'down' not in self.entity_blocked_directions and 'up' not in self.entity_blocked_directions and self.entity.y < 700:
             self.entity.y += self.y_speed
 
         if 'down' in self.entity_blocked_directions:
