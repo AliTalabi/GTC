@@ -60,13 +60,23 @@ class Game:
                     and self.player.entity.left < block.entity.right
                     and self.player.entity.right > block.entity.left
                     and self.player.entity.colliderect(block.entity)
-                    and
-                    (
-                        'up' not in self.player.entity_blocked_directions
-                        and'left' not in self.player.entity_blocked_directions
-                        and 'right' not in self.player.entity_blocked_directions
-                )
+                    and'up' not in self.player.entity_blocked_directions
+                    and'left' not in self.player.entity_blocked_directions
+                    and 'right' not in self.player.entity_blocked_directions
             ):
 
                 self.player.entity_blocked_directions.append('down')
                 self.player.entity.bottom = block.entity.top - 0.01
+
+            if (
+                    (
+                        'right' in self.player.entity_blocked_directions
+                        or 'right' in self.player.entity_blocked_directions
+                        or 'right' in self.player.entity_blocked_directions
+                )
+                and self.player.entity.bottom >= block.entity.top
+                and self.player.entity.left < block.entity.right
+                and self.player.entity.right > block.entity.left
+                and self.player.entity.colliderect(block.entity)
+            ):
+                self.player.entity_blocked_directions.append('down')
