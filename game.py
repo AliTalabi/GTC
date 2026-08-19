@@ -71,8 +71,8 @@ class Game:
             if (
                     (
                         'right' in self.player.entity_blocked_directions
-                        or 'right' in self.player.entity_blocked_directions
-                        or 'right' in self.player.entity_blocked_directions
+                        or 'left' in self.player.entity_blocked_directions
+                        or 'up' in self.player.entity_blocked_directions
                 )
                 and self.player.entity.bottom >= block.entity.top
                 and self.player.entity.left < block.entity.right
