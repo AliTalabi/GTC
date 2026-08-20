@@ -1,6 +1,6 @@
 # GTC
 
-> 🚧 **Work in Progress**
+**Work in Progress**
 
 GTC is currently under development. The core concept and main idea of the game have not been finalized yet.
 
