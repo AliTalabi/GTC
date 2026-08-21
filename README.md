@@ -18,4 +18,4 @@ The main gameplay concept will be defined as development progresses.
 
 **Early Development — Core Concept Not Finalized**
 
-This repository is currently being used to experiment with and develop the technical foundations of the game.
+This repository is currently being used to experiment with and develop the technical foundations of the game.....
