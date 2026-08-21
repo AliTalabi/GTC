@@ -60,9 +60,30 @@ class Block(Entity):
         super().__init__(entity_image, entity_type)
 
 
-class Player(Entity):
+class Pinkey(Entity):
 
-    def __init__(self, entity_image='player', entity_type=2):
+    def __init__(self, entity_image='pink', entity_type=2):
+        super().__init__(entity_image, entity_type)
+        self.entity_blocked_directions = ['down']
+
+    def movement(self):
+
+        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
+            self.entity.x += 40
+
+        elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
+            self.entity.x -= 40
+
+        elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+            self.entity.y -= 40
+
+        elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions:
+            self.entity.y += 40
+
+
+class Bluey(Entity):
+
+    def __init__(self, entity_image='blue', entity_type=3):
         super().__init__(entity_image, entity_type)
         self.entity_blocked_directions = ['down']
 

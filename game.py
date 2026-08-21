@@ -11,49 +11,56 @@ class Game:
             self.block = Block()
             self.block_list.append(self.block)
 
-        self.player = Player()
+        self.pinkey = Pinkey()
+        self.bluey = Bluey()
+
+        self.players_list = [self.pinkey, self.bluey]
 
     def draw_game(self):
 
         for block in self.block_list:
             block.draw_entity()
 
-        self.player.draw_entity()
+        self.pinkey.draw_entity()
+        self.bluey.draw_entity()
 
     def update_game(self):
 
         for block in self.block_list:
             block.update_entity()
 
-        self.player.update_entity()
-        self.player.entity_blocked_directions = []
+        self.pinkey.update_entity()
+        self.bluey.update_entity()
 
-        for block in self.block_list:
+        for player in self.players_list:
+            player.entity_blocked_directions = []
 
-            if (
-                    self.player.entity.right == block.entity.left
-                    and self.player.entity.top < block.entity.bottom
-                    and self.player.entity.bottom > block.entity.top
-            ):
-                self.player.entity_blocked_directions.append('right')
+            for block in self.block_list:
 
-            if (
-                    self.player.entity.left == block.entity.right
-                    and self.player.entity.top < block.entity.bottom
-                    and self.player.entity.bottom > block.entity.top
-            ):
-                self.player.entity_blocked_directions.append('left')
+                if (
+                        player.entity.right == block.entity.left
+                        and player.entity.top < block.entity.bottom
+                        and player.entity.bottom > block.entity.top
+                ):
+                    player.entity_blocked_directions.append('right')
 
-            if (
-                    self.player.entity.top == block.entity.bottom
-                    and self.player.entity.left < block.entity.right
-                    and self.player.entity.right > block.entity.left
-            ):
-                self.player.entity_blocked_directions.append('up')
+                if (
+                        player.entity.left == block.entity.right
+                        and player.entity.top < block.entity.bottom
+                        and player.entity.bottom > block.entity.top
+                ):
+                    player.entity_blocked_directions.append('left')
 
-            if (
-                    self.player.entity.bottom == block.entity.top
-                    and self.player.entity.left < block.entity.right
-                    and self.player.entity.right > block.entity.left
-            ):
-                self.player.entity_blocked_directions.append('down')
+                if (
+                        player.entity.top == block.entity.bottom
+                        and player.entity.left < block.entity.right
+                        and player.entity.right > block.entity.left
+                ):
+                    player.entity_blocked_directions.append('up')
+
+                if (
+                        player.entity.bottom == block.entity.top
+                        and player.entity.left < block.entity.right
+                        and player.entity.right > block.entity.left
+                ):
+                    player.entity_blocked_directions.append('down')
