@@ -68,16 +68,16 @@ class Pinkey(Entity):
 
     def movement(self):
 
-        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
+        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions and not keyboard.left:
             self.entity.x += 40
 
-        elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
+        elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions and not keyboard.right:
             self.entity.x -= 40
 
-        elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+        elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and not keyboard.down:
             self.entity.y -= 40
 
-        elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions:
+        elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions and not keyboard.up:
             self.entity.y += 40
 
 
@@ -89,14 +89,14 @@ class Bluey(Entity):
 
     def movement(self):
 
-        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions:
+        if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions and not keyboard.left:
             self.entity.x += 40
 
-        elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions:
+        elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions and not keyboard.right:
             self.entity.x -= 40
 
-        elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions:
+        elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and not keyboard.down:
             self.entity.y -= 40
 
-        elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions:
+        elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions and not keyboard.up:
             self.entity.y += 40
