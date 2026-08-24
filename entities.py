@@ -7,7 +7,7 @@ entities_pos_dict = Map().get_entity_start_pos()
 
 class Entity:
 
-    def __init__(self, entity_image=None, entity_type=None):
+    def __init__(self, entity_image=None, entity_type=None, entity_speed=0):
 
         self.entity_image = entity_image
         self.entity = None
@@ -15,6 +15,7 @@ class Entity:
         self.entity_type = entity_type
         self.entity_define_bool = True
         self.entity_arrangement_bool = True
+        self.entity_speed = entity_speed
 
     def define_actor(self):
 
@@ -62,41 +63,43 @@ class Block(Entity):
 
 class Pinkey(Entity):
 
-    def __init__(self, entity_image='pink', entity_type=2):
+    def __init__(self, entity_image='pink', entity_type=2, entity_speed=40):
         super().__init__(entity_image, entity_type)
         self.entity_blocked_directions = ['down']
+        self.entity_speed = entity_speed
 
     def movement(self):
 
         if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions and not keyboard.left:
-            self.entity.x += 40
+            self.entity.x += self.entity_speed
 
         elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions and not keyboard.right:
-            self.entity.x -= 40
+            self.entity.x -= self.entity_speed
 
         elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and not keyboard.down:
-            self.entity.y -= 40
+            self.entity.y -= self.entity_speed
 
         elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions and not keyboard.up:
-            self.entity.y += 40
+            self.entity.y += self.entity_speed
 
 
 class Bluey(Entity):
 
-    def __init__(self, entity_image='blue', entity_type=3):
+    def __init__(self, entity_image='blue', entity_type=3, entity_speed=40):
         super().__init__(entity_image, entity_type)
         self.entity_blocked_directions = ['down']
+        self.entity_speed = entity_speed
 
     def movement(self):
 
         if keyboard.right and self.entity.x < 1260 and 'right' not in self.entity_blocked_directions and not keyboard.left:
-            self.entity.x += 40
+            self.entity.x += self.entity_speed
 
         elif keyboard.left and self.entity.x > 20 and 'left' not in self.entity_blocked_directions and not keyboard.right:
-            self.entity.x -= 40
+            self.entity.x -= self.entity_speed
 
         elif keyboard.up and self.entity.y > 20 and 'up' not in self.entity_blocked_directions and not keyboard.down:
-            self.entity.y -= 40
+            self.entity.y -= self.entity_speed
 
         elif keyboard.down and self.entity.y < 700 and 'down' not in self.entity_blocked_directions and not keyboard.up:
-            self.entity.y += 40
+            self.entity.y += self.entity_speed

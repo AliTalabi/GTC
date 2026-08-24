@@ -1,355 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7fcd1b4-7d19-4787-b1df-ab9e0d8ef5fb" name="Changes" comment="refactor: map update for checking all situations">
+    <list default="true" id="a34489b1-163a-46f6-9fe1-98daff7b164c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/GTC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GTC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GTC.py" beforeDir="false" afterPath="$PROJECT_DIR$/GTC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AliTalabi1389&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AliTalabi"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:AliTalabi/GTC.git&quot;,
-    &quot;accountId&quot;: &quot;44975ba2-0b4f-438e-a92f-08bf709f2909&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:AliTalabi/GTC.git",
+    "accountId": "dd2f468a-59c7-4021-8d74-fa917d4ccee7"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3HHXycHo9AcujfPJbnd06BuqJrL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="3INEBEDKtIvLbDnbPFi1a3OJbDE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.GTC.executor&quot;: &quot;Run&quot;,
-    &quot;Python.map.executor&quot;: &quot;Run&quot;,
-    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="GTC" type="PythonConfigurationType" factoryName="Python">
-      <module name="GTC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 (GTC)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GTC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.8665.309" />
+        <option value="bundled-python-sdk-c6d794e1806d-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.309" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7fcd1b4-7d19-4787-b1df-ab9e0d8ef5fb" name="Changes" comment="" />
-      <created>1785526224013</created>
+      <changelist id="a34489b1-163a-46f6-9fe1-98daff7b164c" name="Changes" comment="" />
+      <created>1787596488498</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1785526224013</updated>
+      <updated>1787596488498</updated>
+      <workItem from="1787596489525" duration="630000" />
+      <workItem from="1787602997838" duration="103000" />
     </task>
-    <task id="LOCAL-00001" summary="created and organized major files">
-      <option name="closed" value="true" />
-      <created>1785531154213</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1785531154213</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Implement core classes structure">
-      <option name="closed" value="true" />
-      <created>1785620880177</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1785620880177</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Remove test file">
-      <option name="closed" value="true" />
-      <created>1785621011769</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1785621011769</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added game images">
-      <option name="closed" value="true" />
-      <created>1785621041302</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1785621041302</updated>
-    </task>
-    <task id="LOCAL-00005" summary="branch arrangement merged">
-      <option name="closed" value="true" />
-      <created>1786020131504</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1786020131504</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat: implement initial player">
-      <option name="closed" value="true" />
-      <created>1786020686048</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1786020686048</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat: add basic player movement">
-      <option name="closed" value="true" />
-      <created>1786055617895</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1786055617895</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat: add player collision with objects">
-      <option name="closed" value="true" />
-      <created>1786131959936</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1786131959936</updated>
-    </task>
-    <task id="LOCAL-00009" summary="perf: optimize player collision detection">
-      <option name="closed" value="true" />
-      <created>1786133556609</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1786133556609</updated>
-    </task>
-    <task id="LOCAL-00010" summary="perf: optimize player collision detection">
-      <option name="closed" value="true" />
-      <created>1786133575114</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1786133575114</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: add player jump with gravity">
-      <option name="closed" value="true" />
-      <created>1786197353122</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1786197353122</updated>
-    </task>
-    <task id="LOCAL-00012" summary="wip: optimize jump mechanics">
-      <option name="closed" value="true" />
-      <created>1786222690681</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1786222690681</updated>
-    </task>
-    <task id="LOCAL-00013" summary="docs: update project README.md">
-      <option name="closed" value="true" />
-      <created>1786223305990</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1786223305990</updated>
-    </task>
-    <task id="LOCAL-00014" summary="refactor: improve jump mechanics">
-      <option name="closed" value="true" />
-      <created>1786389730878</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1786389730878</updated>
-    </task>
-    <task id="LOCAL-00015" summary="refactor: improve jump mechanics 2">
-      <option name="closed" value="true" />
-      <created>1786455937433</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1786455937433</updated>
-    </task>
-    <task id="LOCAL-00016" summary="refactor: improve jump mechanics 3">
-      <option name="closed" value="true" />
-      <created>1786479089707</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1786479089707</updated>
-    </task>
-    <task id="LOCAL-00017" summary="refactor: improve jump mechanics 4">
-      <option name="closed" value="true" />
-      <created>1786479180113</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1786479180113</updated>
-    </task>
-    <task id="LOCAL-00018" summary="refactor: improve jump mechanics 5">
-      <option name="closed" value="true" />
-      <created>1786479985699</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1786479985699</updated>
-    </task>
-    <task id="LOCAL-00019" summary="refactor: improve jump mechanics 6">
-      <option name="closed" value="true" />
-      <created>1786563932725</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1786563932725</updated>
-    </task>
-    <task id="LOCAL-00020" summary="refactor: map update">
-      <option name="closed" value="true" />
-      <created>1786649485146</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1786649485146</updated>
-    </task>
-    <task id="LOCAL-00021" summary="refactor: map update">
-      <option name="closed" value="true" />
-      <created>1786737566989</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1786737566989</updated>
-    </task>
-    <task id="LOCAL-00022" summary="refactor: map update">
-      <option name="closed" value="true" />
-      <created>1786737637354</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1786737637354</updated>
-    </task>
-    <task id="LOCAL-00023" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786737746629</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1786737746629</updated>
-    </task>
-    <task id="LOCAL-00024" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786737767384</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1786737767384</updated>
-    </task>
-    <task id="LOCAL-00025" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786823427405</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1786823427405</updated>
-    </task>
-    <task id="LOCAL-00026" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786906041939</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1786906041939</updated>
-    </task>
-    <task id="LOCAL-00027" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786995090930</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1786995090930</updated>
-    </task>
-    <task id="LOCAL-00028" summary="refactor: map update for checking all situations">
-      <option name="closed" value="true" />
-      <created>1786995217058</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1786995217058</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="created and organized major files" />
-    <MESSAGE value="Implement core classes structure" />
-    <MESSAGE value="Remove test file" />
-    <MESSAGE value="added game images" />
-    <MESSAGE value="branch arrangement merged" />
-    <MESSAGE value="feat: implement initial player" />
-    <MESSAGE value="feat: add basic player movement" />
-    <MESSAGE value="feat: add player collision with objects" />
-    <MESSAGE value="perf: optimize player collision detection" />
-    <MESSAGE value="feat: add player jump with gravity" />
-    <MESSAGE value="wip: optimize jump mechanics" />
-    <MESSAGE value="docs: update project README.md" />
-    <MESSAGE value="refactor: improve jump mechanics" />
-    <MESSAGE value="refactor: improve jump mechanics 2" />
-    <MESSAGE value="refactor: improve jump mechanics 3" />
-    <MESSAGE value="refactor: improve jump mechanics 4" />
-    <MESSAGE value="refactor: improve jump mechanics 5" />
-    <MESSAGE value="refactor: improve jump mechanics 6" />
-    <MESSAGE value="refactor: map update" />
-    <MESSAGE value="refactor: map update for checking all situations" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: map update for checking all situations" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
