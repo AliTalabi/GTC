@@ -1,4 +1,3 @@
-import pgzero
 from entities import *
 
 class Game:
