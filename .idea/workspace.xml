@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a34489b1-163a-46f6-9fe1-98daff7b164c" name="Changes" comment="test map" />
+    <list default="true" id="a34489b1-163a-46f6-9fe1-98daff7b164c" name="Changes" comment="test map">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +110,8 @@
       <workItem from="1788991407713" duration="1089000" />
       <workItem from="1788994303846" duration="7000" />
       <workItem from="1789072897331" duration="21000" />
+      <workItem from="1789155897475" duration="19000" />
+      <workItem from="1789202098087" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -213,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789072909642</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test map">
+      <option name="closed" value="true" />
+      <created>1789155906343</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1789155906343</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +237,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="test map" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GTC$GTC.coverage" NAME="GTC Coverage Results" MODIFIED="1788461373645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/GTC$GTC.coverage" NAME="GTC Coverage Results" MODIFIED="1789202102555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/GTC$test.coverage" NAME="test Coverage Results" MODIFIED="1788635220535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
